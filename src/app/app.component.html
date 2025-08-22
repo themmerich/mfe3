@@ -1,1 +1,26 @@
 <h1>MFE3 runs with Angular 19.2 and without Angular Elements!</h1>
+<button pButton (click)="loadData()">Load</button>
+<p>
+  <p-table [value]="data()" stripedRows [tableStyle]="{ 'min-width': '50rem' }">
+    <ng-template #header>
+      <tr>
+        <th>Titel</th>
+        <th>Bezeichnung</th>
+        <th>Autor</th>
+        <th>Preis</th>
+        <th>Menge</th>
+        <th>Gesamtpreis</th>
+      </tr>
+    </ng-template>
+    <ng-template #body let-row>
+      <tr>
+        <th>{{ row.title }}</th>
+        <th>{{ row.description }}</th>
+        <th>{{ row.author }}</th>
+        <th>{{ row.price }}</th>
+        <th>{{ row.quantity }}</th>
+        <th>{{ row.sum }}</th>
+      </tr>
+    </ng-template>
+  </p-table>
+</p>

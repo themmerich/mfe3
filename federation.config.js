@@ -10,6 +10,22 @@ module.exports = withNativeFederation({
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    '@primeng/themes/types': {
+      transient: true,
+      packageInfo: {
+        entryPoint: 'node_modules/@primeng/themes/index.mjs',
+        version: '19.1.4',
+        esm: true
+      }
+    },
+    '@primeng/themes/aura': {
+      singleton: true,
+      strictVersion: true,
+      requiredVersion: 'auto',
+      transient: true,
+      includeSecondaries: false,
+      build: 'separate'
+    }
   },
 
   skip: [

@@ -19,8 +19,11 @@
     "@angular/platform-browser": "^19.2.0",
     "@angular/platform-browser-dynamic": "^19.2.0",
     "@angular/router": "^19.2.0",
+    "@primeng/themes": "^19.1.4",
     "@softarc/native-federation-node": "^2.0.10",
+    "chart.js": "^4.5.0",
     "es-module-shims": "^1.5.12",
+    "primeng": "^19.1.4",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
